@@ -116,7 +116,20 @@
       </div>
     </div>
   </div>
+  
+  <!-- ✅ ลิงก์ซ่อน -->
+  <a id="1st_Floor" href="https://bpstech.online/d/afe84455-3d09-4a1e-b1e3-a7ad81d782ed/building-automation-system-bas-cctv-hq-1st-floor?orgId=1" target="_blank" style="display:none;"></a>
 
+  <a id="M_Floor" href="https://bpstech.online/d/b615d429-9483-42ed-863c-31c19dd4dc05/building-automation-system-bas-cctv-hq-m-floor?orgId=1" target="_blank" style="display:none;"></a>
+
+  <a id="2nd_Floor" href="https://bpstech.online/d/e13aaa88-7e67-4012-987d-a311fcfa6df5/building-automation-system-bas-cctv-hq-2nd-floor?orgId=1" target="_blank" style="display:none;"></a>
+  
+  <a id="3rd_Floor" href="https://bpstech.online/d/a0806db5-a9af-49a2-93d8-810548f0ede7/building-automation-system-bas-cctv-hq-3rd-floor?orgId=1" target="_blank" style="display:none;"></a>
+
+  <a id="4th_Floor" href="https://bpstech.online/d/c8dcd010-74f1-4564-9181-b8423d02af07/building-automation-system-bas-cctv-hq-4th-floor?orgId=1" target="_blank" style="display:none;"></a>
+
+  <a id="Roof_Level" href="https://bpstech.online/d/bc876a7e-727f-4cb1-a5e8-bd750422fb36/building-automation-system-bas-cctv-hq-roof-level?orgId=1" target="_blank" style="display:none;"></a>
+  
   <script>
     const iframe = document.getElementById('skfb-frame');
     const client = new Sketchfab(iframe);
@@ -176,6 +189,43 @@
               if (!err && annotation?.name) {
                 CameraName = annotation.name;
                 document.getElementById('cameraNameBox').innerText = 'กล้อง ' + CameraName;
+                        
+              if (CameraName === "1st_Floor") {
+                // trigger ลิงก์แทน window.open
+                document.getElementById("1st_Floor").click();
+                return;
+              }
+              
+              if (CameraName === "M_Floor") {
+                // trigger ลิงก์แทน window.open
+                document.getElementById("M_Floor").click();
+                return;
+              }
+              
+              if (CameraName === "2nd_Floor") {
+                // trigger ลิงก์แทน window.open
+                document.getElementById("2nd_Floor").click();
+                return;
+              }
+              
+              if (CameraName === "3rd_Floor") {
+                // trigger ลิงก์แทน window.open
+                document.getElementById("3rd_Floor").click();
+                return;
+              }
+              
+              if (CameraName === "4th_Floor") {
+                // trigger ลิงก์แทน window.open
+                document.getElementById("4th_Floor").click();
+                return;
+              }
+              
+              if (CameraName === "Roof_Level") {
+                // trigger ลิงก์แทน window.open
+                document.getElementById("Roof_Level").click();
+                return;
+              }
+              
                 getTextFromGoogleSheet(CameraName);
               }
             });
